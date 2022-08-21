@@ -76,6 +76,15 @@ main {
     grid-row-start: 2;
     grid-row-end: 2;
     background-color: coral;
+    display: grid;
+    grid-template-rows: 5vh 1fr;
+}
+
+.projects {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .rightbar {

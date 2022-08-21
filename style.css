@@ -93,5 +93,40 @@ main {
     grid-row-start: 2;
     grid-row-end: 2;
     background-color: darkseagreen;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
+.announcements {
+    grid-row-start: 1;
+    display: grid;
+    grid-template-rows: 5vh 1fr;
+}
+
+.announcements_container {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+}
+
+.trending {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 5vh 1fr;
+}
+
+.trending_container {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trending_item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending_item>p {
+    grid-column-start: 2;
+}

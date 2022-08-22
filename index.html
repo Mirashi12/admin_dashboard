@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
@@ -48,7 +51,7 @@
                     <input type="text"></input>
                 </div>
                 <div class="notifications">
-                    <img src="./resources/bell.png" width="25px" height="25px">
+                    <img src="./resources/bell.png" id="bell" width="25px" height="25px">
                     <img src="./resources/profile_user.png" width="50px">
                     <p>Username</p>
                 </div>
@@ -58,7 +61,7 @@
                     <img src="./resources/profile_user.png" width="70px">
                     <div class="welcome">
                         <p>Hi there,</p>
-                        <h3>Morgan Oakley (@Morgan)</h3>
+                        <h3>Username (@UserName)</h3>
                     </div>
                 </div>
                 <div class="post_buttons">
@@ -69,11 +72,10 @@
             </div>
         </div>
             <div class="feed">
-                <h3>Your projects</h3>
                 <div class="projects">
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>My first project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu.</p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -81,8 +83,8 @@
                         </div>
                     </div>
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>A second one</h3>
+                        <p>Morbi a ex rhoncus mi dictum pharetra at convallis felis. Nulla facilisi. Sed at lacinia felis. Nullam ut nisl vulputate, cursus ipsum ut, suscipit erat. Proin auctor mi vitae urna varius, hendrerit mattis sem lacinia. Nam vel elit vel dolor ornare fringilla a et odio. Morbi a augue sed ex aliquam blandit vel eu sapien. Integer ornare eros dolor, luctus ultricies odio fermentum vel. </p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -90,8 +92,8 @@
                         </div> 
                     </div>
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>My best project</h3>
+                        <p>Proin ut magna quis justo vehicula commodo eget at ex. Fusce quis tortor gravida, egestas tellus sed, dignissim risus. Morbi enim diam, cursus non mi non, tempor tincidunt mauris. Suspendisse iaculis consequat leo eget ultricies. Proin et suscipit ipsum. Nulla faucibus lectus quis neque varius blandit. Suspendisse quis interdum eros, in blandit elit. Ut facilisis scelerisque mi eu volutpat. </p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -99,8 +101,8 @@
                         </div> 
                     </div>
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>Wait, there is more!</h3>
+                        <p>Maecenas vitae elit bibendum, feugiat ante et, porta lacus. Duis dictum orci vitae dapibus rhoncus. Mauris vel feugiat magna. Ut tempus, metus sed varius tincidunt, turpis massa lacinia quam, in pellentesque nulla magna eget sapien.</p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -108,8 +110,8 @@
                         </div>
                     </div>
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>Another one</h3>
+                        <p>Pellentesque vel dolor dapibus sem convallis porta. Quisque rutrum mi sit amet arcu scelerisque, eu mattis magna cursus. Proin magna lacus, vehicula sit amet rhoncus eget, commodo sed quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -117,8 +119,8 @@
                         </div>
                     </div>
                     <div class="project">
-                        <h3>Super cool project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ex eu facilisis placerat. Curabitur ac lorem tortor. Donec pharetra enim eu justo consequat, et eleifend urna vulputate. Proin tempor eros justo, sit amet accumsan augue fringilla eu. Donec pulvinar eros ornare ipsum pretium porttitor. Quisque vel lobortis augue.</p>
+                        <h3>My latest project</h3>
+                        <p>Sed sagittis bibendum ipsum ac pharetra. Fusce metus augue, venenatis a consequat ac, rhoncus ac felis. Donec ultricies porttitor erat ac iaculis. Morbi ac tincidunt felis. Suspendisse sit amet felis scelerisque, posuere urna a, scelerisque nibh.</p>
                         <div class="feed_controls">
                             <img src="./resources/plus-box.png">
                             <img src="./resources/share-variant.png">
@@ -135,13 +137,15 @@
                             <h4>Site Maintenance</h4>
                             <p>Curabitur lobortis tellus eu magna venenatis volutpat. Donec ut arcu quis odio elementum vestibulum ut ut turpis. Pellentesque dapibus hendrerit lacinia. Donec vel purus sodales, maximus ex eu, varius sapien. Nullam id aliquam sem. </p>
                         </div>
+                        <div class="separator"></div>
                         <div class="announcement_item">
-                            <h4>Site Maintenance</h4>
-                            <p>Curabitur lobortis tellus eu magna venenatis volutpat. Donec ut arcu quis odio elementum vestibulum ut ut turpis. Pellentesque dapibus hendrerit lacinia. Donec vel purus sodales, maximus ex eu, varius sapien. Nullam id aliquam sem. </p>
+                            <h4>Our new socials</h4>
+                            <p>Aenean id pulvinar erat. Proin rutrum tellus eget urna feugiat, sed bibendum libero sodales. Pellentesque fringilla, eros ac accumsan aliquet, odio elit accumsan erat, at gravida nunc lorem nec augue. Etiam ligula turpis, porttitor eu viverra a, ultrices non mauris. Donec dapibus mauris at arcu accumsan condimentum.</p>
                         </div>
+                        <div class="separator"></div>
                         <div class="announcement_item">
-                            <h4>Site Maintenance</h4>
-                            <p>Curabitur lobortis tellus eu magna venenatis volutpat. Donec ut arcu quis odio elementum vestibulum ut ut turpis. Pellentesque dapibus hendrerit lacinia. Donec vel purus sodales, maximus ex eu, varius sapien. Nullam id aliquam sem. </p>
+                            <h4>Join our community event</h4>
+                            <p>Etiam urna turpis, efficitur at ornare nec, vehicula vitae arcu. Ut aliquet libero purus. Ut ultrices imperdiet risus, nec viverra magna venenatis vel. Aliquam consectetur massa in nisl vehicula, et convallis ligula placerat. Nullam mattis odio at laoreet dictum. Sed tristique vel libero vitae pellentesque.</p>
                         </div>
                     </div>
                 </div>
@@ -149,24 +153,24 @@
                         <h3>Trending</h3>
                         <div class="trending_container">
                             <div class="trending_item">
-                                <img src="./resources/profile_2.png" width="50px">
-                                <p>@Tegan</p>
-                                <p>World peace builder</p>
+                                <img src="./resources/profile_2.png" width="40px">
+                                <p>@ThomasN</p>
+                                <p>Mechanical keyboards</p>
                             </div>
                             <div class="trending_item">
-                                <img src="./resources/profile_3.png" width="50px">
-                                <p>@Tegan</p>
-                                <p>World peace builder</p>
+                                <img src="./resources/profile_3.png" width="40px">
+                                <p>@123Nickname</p>
+                                <p>Architecture and photography</p>
                             </div>
                             <div class="trending_item">
-                                <img src="./resources/profile_4.png" width="50px">
-                                <p>@Tegan</p>
-                                <p>World peace builder</p>
+                                <img src="./resources/profile_4.png" width="40px">
+                                <p>@Imiru</p>
+                                <p>Arts and crafts</p>
                             </div>
                             <div class="trending_item">
-                                <img src="./resources/profile_5.png" width="50px">
-                                <p>@Tegan</p>
-                                <p>World peace builder</p>
+                                <img src="./resources/profile_5.png" width="40px">
+                                <p>@M.J</p>
+                                <p>Politics</p>
                             </div>
                         </div>
                     </div>

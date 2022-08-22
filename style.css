@@ -7,8 +7,8 @@ main {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr, repeat(3, 1fr);
+    grid-template-columns: max(15vw, 215px) 1fr 1fr max(15vw, 200px);
+    grid-template-rows: 1fr repeat(3, 1fr);
 }
 
 .sidebar {
@@ -42,6 +42,7 @@ main {
 }
 
 .menu_item>img {
+    justify-self: center;
 
 }
 
@@ -52,7 +53,11 @@ main {
     grid-row-end: 1;
     background-color: rgb(177, 125, 224);
     display: grid;
-    grid-template-rows: .5fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: min(50px, 5vw);
+    padding-right: min(50px, 5vw);
+    padding-bottom: 20px;
+    height: max(10vh, 130px);
 
 }
 
@@ -60,14 +65,69 @@ main {
     grid-row-start: 1;
     grid-row-end: 1;
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 1fr 200px;
+    justify-items:flex-start;
 }
 
+.search {
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.search>input {
+    width: min(40vw, 550px);
+    height: 3vh;
+    border-radius: 12px;
+}
+
+
+.notifications {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 .topbar>.lower {
     grid-row-start: 2;
     grid-row-end: 2;
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.user_info {
+    display: grid;
+    grid-template-columns: .25fr 1.75fr;
+}
+
+.user_info>img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.welcome {
+    align-self: center;
+    width: max(25vw, 200px);
+    padding-left: 15px;
+}
+
+.post_buttons {
+    grid-column-start: 3;
+    display: flex;
+    width: max(425px, 30vw);
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+}
+
+.post_buttons>button {
+    width: max(20%, 70px);
+    height: 50%;
+    border-radius: 20px;
 }
 
 .feed {
